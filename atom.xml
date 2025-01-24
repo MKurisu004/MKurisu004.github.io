@@ -6,7 +6,7 @@
   <link href="https://mkurisu004.github.io/atom.xml" rel="self"/>
   
   <link href="https://mkurisu004.github.io/"/>
-  <updated>2025-01-24T13:36:32.454Z</updated>
+  <updated>2025-01-24T14:40:34.031Z</updated>
   <id>https://mkurisu004.github.io/</id>
   
   <author>
@@ -21,42 +21,25 @@
     <link href="https://mkurisu004.github.io/2025/01/15/hello-hexo/"/>
     <id>https://mkurisu004.github.io/2025/01/15/hello-hexo/</id>
     <published>2025-01-15T06:12:12.000Z</published>
-    <updated>2025-01-24T13:36:32.454Z</updated>
+    <updated>2025-01-24T14:40:34.031Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;欢迎来到&lt;strong&gt;Salieri&lt;/strong&gt;的个人博客！&lt;br&gt;记录一些有意思的东西。&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;作为第一篇博客，那就好好介绍一下自己吧。&lt;/p&gt;
+&lt;p&gt;我是&lt;strong&gt;Salieri&lt;/strong&gt;，一名清华大学致理书院的本科生，所学专业为信息与计算科学。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;家乡来自陕西西安。从出生到高中毕业我一直生活在西安。&lt;/li&gt;
+&lt;li</summary>
         
       
     
     
     
     <category term="杂谈" scheme="https://mkurisu004.github.io/categories/%E6%9D%82%E8%B0%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World !</title>
-    <link href="https://mkurisu004.github.io/2025/01/14/hello-world/"/>
-    <id>https://mkurisu004.github.io/2025/01/14/hello-world/</id>
-    <published>2025-01-14T12:54:00.734Z</published>
-    <updated>2025-01-16T18:28:11.437Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
     
     
   </entry>

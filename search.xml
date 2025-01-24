@@ -8,7 +8,7 @@
       <link href="/2025/01/15/hello-hexo/"/>
       <url>/2025/01/15/hello-hexo/</url>
       
-        <content type="html"><![CDATA[<p>欢迎来到<strong>Salieri</strong>的个人博客！<br>记录一些有意思的东西。</p>]]></content>
+        <content type="html"><![CDATA[<p>作为第一篇博客，那就好好介绍一下自己吧。</p><p>我是<strong>Salieri</strong>，一名清华大学致理书院的本科生，所学专业为信息与计算科学。</p><hr><ul><li>家乡来自陕西西安。从出生到高中毕业我一直生活在西安。</li><li>名称Salieri来自于意大利的作曲家安东尼奥·萨列里。1769年萨列里创作了他第一部传世的歌剧《Le donne letterate》。Salieri更多的是在电影《Amadeus》中 作为一位嫉妒Mozart的才能并害死他的影视人物而为人所知。</li><li>我通常不将“mbti”作为介绍自己的内容，也不支持以其作为筛选标准的社交模式。显然用十六种字母的排列组合并不能划分复杂的人格，这在物理学中是“not even wrong“的级别。更多的研究则指出，所谓mbti甚至能在一定程度上引诱人的性格趋向于其测试结果。我更想不加限制地保持“我”，因此我不使用mbti介绍自己。</li></ul><hr>]]></content>
       
       
       <categories>
@@ -16,19 +16,6 @@
           <category> 杂谈 </category>
           
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World !</title>
-      <link href="/2025/01/14/hello-world/"/>
-      <url>/2025/01/14/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
       
       
     </entry>
