@@ -6,7 +6,7 @@
   <link href="https://mkurisu004.github.io/atom.xml" rel="self"/>
   
   <link href="https://mkurisu004.github.io/"/>
-  <updated>2025-01-24T14:40:34.031Z</updated>
+  <updated>2025-01-24T15:19:06.276Z</updated>
   <id>https://mkurisu004.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://mkurisu004.github.io/2025/01/15/hello-hexo/"/>
     <id>https://mkurisu004.github.io/2025/01/15/hello-hexo/</id>
     <published>2025-01-15T06:12:12.000Z</published>
-    <updated>2025-01-24T14:40:34.031Z</updated>
+    <updated>2025-01-24T15:19:06.276Z</updated>
     
     
       
@@ -29,11 +29,11 @@
         
         
     <summary type="html">&lt;p&gt;作为第一篇博客，那就好好介绍一下自己吧。&lt;/p&gt;
-&lt;p&gt;我是&lt;strong&gt;Salieri&lt;/strong&gt;，一名清华大学致理书院的本科生，所学专业为信息与计算科学。&lt;/p&gt;
+&lt;p&gt;我是&lt;strong&gt;Salieri&lt;/strong&gt;，一名清华大学致理书院的本科生。&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;家乡来自陕西西安。从出生到高中毕业我一直生活在西安。&lt;/li&gt;
-&lt;li</summary>
+&lt;li&gt;名称Salieri来自于</summary>
         
       
     
@@ -41,6 +41,8 @@
     
     <category term="杂谈" scheme="https://mkurisu004.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
+    
+    <category term="审视" scheme="https://mkurisu004.github.io/tags/%E5%AE%A1%E8%A7%86/"/>
     
   </entry>
   
