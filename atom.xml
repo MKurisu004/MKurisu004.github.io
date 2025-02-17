@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Steins;Gate</title>
   
-  <subtitle>理论亵渎的支配之地</subtitle>
+  <subtitle>For Dreams and Stars</subtitle>
   <link href="https://mkurisu004.github.io/atom.xml" rel="self"/>
   
   <link href="https://mkurisu004.github.io/"/>
-  <updated>2025-02-06T18:12:41.424Z</updated>
+  <updated>2025-02-07T09:10:25.887Z</updated>
   <id>https://mkurisu004.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>此时彼刻之人</title>
+    <link href="https://mkurisu004.github.io/2025/02/07/ci-shi-bi-ke-zhi-ren/"/>
+    <id>https://mkurisu004.github.io/2025/02/07/ci-shi-bi-ke-zhi-ren/</id>
+    <published>2025-02-06T18:29:04.000Z</published>
+    <updated>2025-02-07T09:10:25.887Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;感觉是目前打过的最爽的硬核本。三个密室和三重反转，推理和还原大概四六开。结局贯彻了”纯爱“的主题，令人十分感慨。&lt;br&gt;主要还是我很喜欢这种富有浪漫感而又令人感到悲伤的故事。神中神！&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：8h+&lt;/li&gt;
+&lt;li&gt;类型：新本格，硬核推理</summary>
+        
+      
+    
+    
+    
+    <category term="剧本杀复盘" scheme="https://mkurisu004.github.io/categories/%E5%89%A7%E6%9C%AC%E6%9D%80%E5%A4%8D%E7%9B%98/"/>
+    
+    
+    <category term="剧本杀" scheme="https://mkurisu004.github.io/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World !</title>
