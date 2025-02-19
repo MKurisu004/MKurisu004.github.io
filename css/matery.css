@@ -241,8 +241,17 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #b2eafb 0%, #77d4f9 100%);
+    opacity: 0.9;
 }
+
+@-webkit-keyframes rainbow {
+    /* 动态切换背景颜色. */
+ }
+ 
+ @keyframes rainbow {
+     /* 动态切换背景颜色. */
+ }
 
 .text-color {
     color: #0f9d58 !important;
@@ -551,8 +560,8 @@ header .go-back i {
 }
 
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    /* -webkit-animation: rainbow 60s infinite; */
+    /* animation: rainbow 60s infinite; */
 }
 
 .bg-cover:before,
