@@ -1,0 +1,98 @@
+# 个人主页的唯一内容入口。修改本文件即可更新页面，无需修改 HTML。
+# 列表按书写顺序显示；复制同类条目可新增内容。
+# Markdown 可用于 about、description、details、note 和 text 类型的 paragraphs。
+# 设置 visible: false 可隐藏某个 section 或条目；删除条目也可以。
+
+name: "Chu Liyun"
+short_name: "Chu Liyun"
+chinese_name: "褚砺耘" # 仅显示在正文大标题的半角括号内；留空可隐藏。
+tagline: "Undergraduate · Tsinghua University"
+description: "Chu Liyun — machine learning systems, efficient LLM inference, and AI infrastructure."
+photo: "/chuliyun.jpg"
+photo_alt: "Portrait of Chu Liyun"
+
+about:
+  - >-
+    I am an undergraduate at **Tsinghua University**, studying Information and
+    Computational Science. My research interests lie in **machine learning systems**,
+    **efficient LLM inference**, and **AI infrastructure**.
+  - >-
+    I plan to begin my Ph.D. studies in the Department of Computer Science and
+    Technology at Tsinghua University in September 2027, advised by Associate
+    Professor Ju Ren. Please feel free to contact me if you have any questions.
+
+# url 可以是外部网址、mailto: 地址，或以 / 开头的仓库内文件路径。
+links:
+  - label: "Email"
+    url: "mailto:zhuly23@mails.tsinghua.edu.cn"
+  - label: "GitHub"
+    url: "https://github.com/MKurisu004"
+  - label: "CV"
+    url: "/resume.pdf"
+
+# section 的顺序也决定顶部导航顺序。id 应使用唯一的英文小写短横线名称。
+# 支持 publications / experience / education / awards / text 五种 type。
+sections:
+  - id: "publications"
+    title: "Publications"
+    type: "publications"
+    note: "\\* Equal contribution."
+    items:
+      - title: "Octopus: Unlocking SSD Parallelism for Sparse KVCache Retrieval"
+        authors:
+          - name: "Tuowei Wang"
+            equal: true
+          - name: "Liyun Chu"
+            equal: true
+            self: true
+          - name: "Ruwen Fan"
+          - name: "Ju Ren"
+        venue: "ATC26"
+        description: >-
+          We propose Octopus, an SSD-based KVCache offloading system optimized
+          for parallel I/O across multiple SSDs.
+        links:
+          - label: "Paper"
+            url: "https://arxiv.org/abs/2603.17803"
+
+  - id: "experience"
+    title: "Research & Experience"
+    nav_title: "Experience"
+    type: "experience"
+    items:
+      - title: "Research Intern"
+        organization: "Ant Research Institute"
+        team: "AI Infra Team, General AI Research Center"
+        period: "Jan. 2026 – Present"
+        description: "Focus on RSI evaluation infrastructure and fp8 RL optimization."
+      - title: "Undergraduate Researcher"
+        organization: "OmniLab, Tsinghua University"
+        period: "2025 – Present"
+        advisor: "Prof. Ju Ren"
+        description: >-
+          Work on LLM inference systems.
+
+  - id: "education"
+    title: "Education"
+    type: "education"
+    items:
+      - title: "Tsinghua University"
+        degree: "B.E. in Information and Computational Science"
+        location: "Beijing, China"
+        period: "Sep. 2023 – Jun. 2027 (Expected)"
+
+  - id: "honors"
+    title: "Honors & Awards"
+    nav_title: "Honors"
+    type: "awards"
+    items:
+      - title: "MLSys Competition Track: AWS Trainium2/3 MoE Kernel Challenge"
+        distinction: "Top 3"
+        year: "2026"
+      - title: "Outstanding Scholarship for Science and Technology Innovation"
+        year: "2025"
+      - title: "Basic Interdisciplinary Challenge Competition, Zhili College"
+        distinction: "Second-Class Award"
+        year: "2025"
+      - title: "Freshman Scholarship, Tsinghua University"
+        year: "2023–2025"

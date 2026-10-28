@@ -1,0 +1,23 @@
+# 部署设置；个人主页内容统一在 _data/profile.yml 中修改。
+url: "https://MKurisu004.github.io"
+baseurl: ""
+lang: "en"
+encoding: "utf-8"
+markdown: kramdown
+kramdown:
+  input: Kramdown
+highlighter: rouge
+plugins: []
+
+# 构建时仅发布页面与静态资源，不发布维护文档或本地依赖。
+exclude:
+  - AGENTS.md
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - tmp
+  - output
+  - local

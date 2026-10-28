@@ -1,0 +1,132 @@
+:root {
+  color-scheme: light;
+  --background: #fdfcf9;
+  --text: #292d32;
+  --muted: #656b73;
+  --link: #285c87;
+  --line: #e3e3df;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 108px;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a:hover { color: #173b5b; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-radius: 2px; }
+::selection { background: #dfebf3; }
+
+.page, .header-inner { width: min(940px, calc(100% - 64px)); margin-inline: auto; }
+.site-header { position: sticky; top: 0; z-index: 10; background: var(--background); border-bottom: 1px solid var(--line); }
+.header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.site-name { color: var(--text); font-family: var(--serif); font-size: 21px; text-decoration: none; white-space: nowrap; }
+nav { display: flex; gap: 24px; flex-wrap: wrap; }
+nav a { font-size: 13px; color: var(--muted); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 160px; align-items: start; gap: 76px; padding: 74px 0 58px; }
+.eyebrow { color: var(--muted); font-size: 12px; letter-spacing: .06em; margin: 0 0 10px; }
+h1, h2 { font-family: var(--serif); font-weight: 400; }
+h1 { margin: 0 0 22px; font-size: clamp(38px, 5vw, 48px); letter-spacing: -.035em; line-height: 1.15; }
+.name-chinese { display: inline-block; white-space: nowrap; font-size: .76em; letter-spacing: 0; vertical-align: .04em; }
+/* Use system Kai fonts for the name; parentheses keep the parent Latin font. */
+.name-chinese-text { font-family: "Kaiti SC", STKaiti, KaiTi, "KaiTi_GB2312", "楷体", serif; font-weight: 400; letter-spacing: .03em; }
+.bio p { margin: 0 0 14px; }
+.bio strong { font-weight: 600; }
+.portrait { display: block; width: 160px; height: 224px; margin-top: 6px; object-fit: cover; border-radius: 3px; }
+.profile-links, .entry-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 22px; }
+.profile-links { margin: 22px 0 0; }
+.profile-links a, .entry-links a { text-decoration: none; font-size: 14px; }
+.profile-links a:hover, .entry-links a:hover { text-decoration: underline; }
+.profile-links span, .entry-links span { font-size: 12px; }
+
+.content-section { display: grid; grid-template-columns: 178px minmax(0, 1fr); gap: 30px; border-top: 1px solid var(--line); padding: 35px 0 38px; }
+h2 { font-size: 23px; line-height: 1.35; letter-spacing: -.025em; margin: 0; }
+.section-body { min-width: 0; }
+h3 { font-size: 16px; font-weight: 600; line-height: 1.55; margin: 0; }
+.entry + .entry { margin-top: 27px; }
+.entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.period { margin: 0; flex-shrink: 0; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.organization { margin: 2px 0 0; }
+.entry-meta { color: var(--muted); font-size: 13px; margin: 1px 0 0; }
+.entry-description { margin-top: 9px; }
+.entry-description p, .entry-detail p { margin: 0; }
+.entry-detail { margin-top: 6px; color: var(--muted); font-size: 13px; }
+.venue { color: var(--link); font-size: 12px; font-weight: 600; letter-spacing: .06em; margin: 0 0 6px; }
+.authors { font-size: 14px; margin: 7px 0 0; color: var(--muted); }
+.authors strong { color: var(--text); font-weight: 600; }
+sup { font-size: .7em; line-height: 0; }
+.entry-links { margin: 11px 0 0; gap: 18px; }
+.section-note { margin-top: 18px; font-size: 12px; color: var(--muted); }
+.section-note p { margin: 0; }
+.awards-list { list-style: none; margin: 0; padding: 0; }
+.awards-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+.awards-list li + li { margin-top: 14px; }
+.distinction { color: var(--link); }
+.section-body > p:first-child { margin-top: 0; }
+.section-body > p:last-child { margin-bottom: 0; }
+.site-footer { display: flex; justify-content: space-between; gap: 24px; border-top: 1px solid var(--line); padding-block: 24px 36px; font-size: 12px; color: var(--muted); }
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 20; padding: 8px 16px; background: var(--background); }
+.skip-link:focus { top: 10px; }
+
+@media (max-width: 760px) {
+  .page, .header-inner { width: calc(100% - 44px); }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 6px; padding-block: 12px; }
+  .site-name { font-size: 19px; }
+  nav { gap: 17px; }
+  nav a { font-size: 12px; }
+  .intro { gap: 30px; grid-template-columns: minmax(0, 1fr) 120px; padding: 44px 0 36px; }
+  .portrait { width: 120px; height: 168px; }
+  .content-section { grid-template-columns: 1fr; gap: 20px; padding-block: 28px 32px; }
+  h2 { font-size: 24px; }
+  .entry-heading { flex-wrap: wrap; gap: 2px 14px; }
+}
+
+@media (max-width: 480px) {
+  html { scroll-padding-top: 122px; }
+  .intro { grid-template-columns: 1fr; gap: 24px; }
+  .portrait { grid-row: 1; width: 100px; height: 140px; margin: 0; }
+  h1 { font-size: 39px; }
+  .eyebrow { font-size: 11px; }
+  nav { gap: 8px 17px; }
+  .entry-heading { display: block; }
+  .period { display: block; margin-top: 3px; }
+  .awards-list li { display: block; }
+  .awards-list li + li { margin-top: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  body { font-size: 10pt; background: white; }
+  .site-header, .skip-link, .site-footer a { display: none; }
+  .page { width: 100%; }
+  .intro { padding-top: 0; gap: 30px; }
+  .content-section { padding-block: 18px; grid-template-columns: 140px minmax(0, 1fr); }
+  .entry { break-inside: avoid; }
+  a { text-decoration: none; }
+}

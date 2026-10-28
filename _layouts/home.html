@@ -1,0 +1,147 @@
+{%- assign profile = site.data.profile -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ profile.description | escape }}">
+    <meta name="color-scheme" content="light">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ profile.name | escape }}">
+    <meta property="og:description" content="{{ profile.description | escape }}">
+    <meta property="og:url" content="{{ '/' | absolute_url }}">
+    {% if profile.photo and profile.photo != empty %}
+    <meta property="og:image" content="{{ profile.photo | absolute_url }}">
+    {% endif %}
+    <title>{{ profile.name | escape }} | Academic Homepage</title>
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="#about">{{ profile.short_name | default: profile.name | escape }}</a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          {% for section in profile.sections %}
+            {% unless section.visible == false %}
+              {% if section.items.size > 0 or section.paragraphs.size > 0 %}
+          <a href="#{{ section.id | escape }}">{{ section.nav_title | default: section.title | escape }}</a>
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <section id="about" class="intro" aria-labelledby="profile-name">
+        <div class="intro-copy">
+          <p class="eyebrow">{{ profile.tagline | escape }}</p>
+          <h1 id="profile-name">{{ profile.name | escape }}{% if profile.chinese_name and profile.chinese_name != empty %} <span class="name-chinese">(<span class="name-chinese-text" lang="zh-Hans">{{ profile.chinese_name | escape }}</span>)</span>{% endif %}</h1>
+          <div class="bio">
+            {% for paragraph in profile.about %}
+              {{ paragraph | markdownify }}
+            {% endfor %}
+          </div>
+          <ul class="profile-links" aria-label="Contact and profiles">
+            {% for link in profile.links %}
+              {% unless link.visible == false %}
+                {% if link.url and link.url != empty %}
+                  {% assign first_character = link.url | slice: 0 %}
+                  {% assign link_url = link.url %}
+                  {% if first_character == '/' %}{% assign link_url = link.url | relative_url %}{% endif %}
+            <li><a href="{{ link_url | escape }}">{{ link.label | escape }}<span aria-hidden="true"> ↗</span></a></li>
+                {% endif %}
+              {% endunless %}
+            {% endfor %}
+          </ul>
+        </div>
+        {% if profile.photo and profile.photo != empty %}
+        <img class="portrait" src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | default: profile.name | escape }}" width="160" height="224" fetchpriority="high">
+        {% endif %}
+      </section>
+
+      {% for section in profile.sections %}
+        {% unless section.visible == false %}
+          {% if section.items.size > 0 or section.paragraphs.size > 0 %}
+      <section id="{{ section.id | escape }}" class="content-section" aria-labelledby="heading-{{ section.id | escape }}">
+        <h2 id="heading-{{ section.id | escape }}">{{ section.title | escape }}</h2>
+        <div class="section-body">
+          {% case section.type %}
+            {% when 'publications' %}
+              {% for item in section.items %}
+                {% unless item.visible == false %}
+          <article class="entry publication">
+            <p class="venue">{{ item.venue | escape }}</p>
+            <h3>{{ item.title | escape }}</h3>
+            <p class="authors">{% for author in item.authors %}{% if author.self %}<strong>{% endif %}{{ author.name | escape }}{% if author.equal %}<sup>*</sup>{% endif %}{% if author.self %}</strong>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+            {% if item.description %}<div class="entry-description">{{ item.description | markdownify }}</div>{% endif %}
+            {% if item.links.size > 0 %}
+            <ul class="entry-links" aria-label="Publication resources">
+              {% for link in item.links %}
+                {% unless link.visible == false %}
+                  {% if link.url and link.url != empty %}
+                    {% assign first_character = link.url | slice: 0 %}
+                    {% assign link_url = link.url %}
+                    {% if first_character == '/' %}{% assign link_url = link.url | relative_url %}{% endif %}
+              <li><a href="{{ link_url | escape }}">{{ link.label | escape }}<span aria-hidden="true"> ↗</span></a></li>
+                  {% endif %}
+                {% endunless %}
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </article>
+                {% endunless %}
+              {% endfor %}
+
+            {% when 'experience', 'education' %}
+              {% for item in section.items %}
+                {% unless item.visible == false %}
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>{{ item.title | escape }}</h3>
+              {% if item.period %}<p class="period">{{ item.period | escape }}</p>{% endif %}
+            </div>
+            {% if item.organization %}<p class="organization">{{ item.organization | escape }}</p>{% endif %}
+            {% if item.degree %}<p class="organization">{{ item.degree | escape }}</p>{% endif %}
+            {% if item.team %}<p class="entry-meta">{{ item.team | escape }}</p>{% endif %}
+            {% if item.location %}<p class="entry-meta">{{ item.location | escape }}</p>{% endif %}
+            {% if item.advisor %}<p class="entry-meta">Advisor: {{ item.advisor | escape }}</p>{% endif %}
+            {% if item.description %}<div class="entry-description">{{ item.description | markdownify }}</div>{% endif %}
+            {% for detail in item.details %}<div class="entry-detail">{{ detail | markdownify }}</div>{% endfor %}
+          </article>
+                {% endunless %}
+              {% endfor %}
+
+            {% when 'awards' %}
+          <ul class="awards-list">
+              {% for item in section.items %}
+                {% unless item.visible == false %}
+            <li>
+              <div>{{ item.title | escape }}{% if item.distinction %}<span class="distinction"> · {{ item.distinction | escape }}</span>{% endif %}</div>
+              {% if item.year %}<span class="period">{{ item.year | escape }}</span>{% endif %}
+            </li>
+                {% endunless %}
+              {% endfor %}
+          </ul>
+
+            {% when 'text' %}
+              {% for paragraph in section.paragraphs %}{{ paragraph | markdownify }}{% endfor %}
+          {% endcase %}
+          {% if section.note %}<div class="section-note">{{ section.note | markdownify }}</div>{% endif %}
+        </div>
+      </section>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </main>
+
+    <footer class="site-footer page">
+      <span>© {{ site.time | date: '%Y' }} {{ profile.name | escape }}</span>
+      <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
