@@ -7,15 +7,14 @@ name: "Chu Liyun"
 short_name: "Chu Liyun"
 chinese_name: "褚砺耘" # 仅显示在正文大标题的半角括号内；留空可隐藏。
 tagline: "Undergraduate · Tsinghua University"
-description: "Chu Liyun — machine learning systems, efficient LLM inference, and AI infrastructure."
+description: "Chu Liyun — LLM inference & stroage."
 photo: "/chuliyun.jpg"
 photo_alt: "Portrait of Chu Liyun"
 
 about:
   - >-
     I am an undergraduate at **Tsinghua University**, studying Information and
-    Computational Science. My research interests lie in **machine learning systems**,
-    **efficient LLM inference**, and **AI infrastructure**.
+    Computational Science. My research interests lie in **efficient LLM inference** and **scalable stroage systems**.
   - >-
     I plan to begin my Ph.D. studies in the Department of Computer Science and
     Technology at Tsinghua University in September 2027, advised by Associate
@@ -53,24 +52,24 @@ sections:
           for parallel I/O across multiple SSDs.
         links:
           - label: "Paper"
-            url: "https://arxiv.org/abs/2603.17803"
+            url: "https://dl.acm.org/doi/10.1145/3828523.3857061"
 
   - id: "experience"
     title: "Research & Experience"
     nav_title: "Experience"
     type: "experience"
     items:
-      - title: "Research Intern"
+      - title: "Intern (university-enterprise cooperation project)"
         organization: "Ant Research Institute"
         team: "AI Infra Team, General AI Research Center"
         period: "Jan. 2026 – Present"
-        description: "Focus on RSI evaluation infrastructure and fp8 RL optimization."
+        description: "Focus on RSI evaluation speedup and fp8 RL optimization."
       - title: "Undergraduate Researcher"
         organization: "OmniLab, Tsinghua University"
         period: "2025 – Present"
         advisor: "Prof. Ju Ren"
         description: >-
-          Work on LLM inference systems.
+          Work on LLM inference & stroage systems.
 
   - id: "education"
     title: "Education"
@@ -90,7 +89,7 @@ sections:
         distinction: "Top 3"
         year: "2026"
       - title: "Outstanding Scholarship for Science and Technology Innovation"
-        year: "2025"
+        year: "2025-2026"
       - title: "Basic Interdisciplinary Challenge Competition, Zhili College"
         distinction: "Second-Class Award"
         year: "2025"
