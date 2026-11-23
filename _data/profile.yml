@@ -7,14 +7,14 @@ name: "Chu Liyun"
 short_name: "Chu Liyun"
 chinese_name: "褚砺耘" # 仅显示在正文大标题的半角括号内；留空可隐藏。
 tagline: "Undergraduate · Tsinghua University"
-description: "Chu Liyun — LLM inference & stroage."
+description: "Chu Liyun — LLM inference & storage."
 photo: "/chuliyun.jpg"
 photo_alt: "Portrait of Chu Liyun"
 
 about:
   - >-
     I am an undergraduate at **Tsinghua University**, studying Information and
-    Computational Science. My research interests lie in **efficient LLM inference** and **scalable stroage systems**.
+    Computational Science. My research interests lie in **efficient LLM inference** and **scalable storage systems**.
   - >-
     I plan to begin my Ph.D. studies in the Department of Computer Science and
     Technology at Tsinghua University in September 2027, advised by Associate
@@ -69,7 +69,7 @@ sections:
         period: "2025 – Present"
         advisor: "Prof. Ju Ren"
         description: >-
-          Work on LLM inference & stroage systems.
+          Work on LLM inference & storage systems.
 
   - id: "education"
     title: "Education"
